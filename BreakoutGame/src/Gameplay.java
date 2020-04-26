@@ -22,7 +22,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 	private boolean gameOver = false;
 	private int score = 0;
 
-	private int totalBricks = 10;
+	private int totalBricks = 20;
 
 	private Timer timer;
 	private int delay =(int) 10;
@@ -82,7 +82,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 			g.setFont(new Font("serif", Font.BOLD, 25 ));
 			g.drawString("Game Over", 350, 200);
 		}else {
-			g.setColor(Color.BLACK);
+			g.setColor(Color.WHITE);
 			g.setFont(new Font("serif", Font.BOLD, 25 ));
 			g.drawString("Score: "+ score, 10, 690);
 			
