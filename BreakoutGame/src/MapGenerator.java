@@ -15,7 +15,7 @@ public class MapGenerator {
 	public MapGenerator(int row, int col) {
 		map = new int[row][col];
 		brickWidth = Gameplay.WIDTH / col;
-		brickHeight = Gameplay.HEIGHT / 2 / row;
+		brickHeight = Gameplay.HEIGHT/ 2 / row;
 	}
 
 	public void setOffset(int offsetX, int offsetY) {

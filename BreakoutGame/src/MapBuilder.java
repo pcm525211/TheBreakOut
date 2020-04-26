@@ -8,12 +8,12 @@ public class MapBuilder {
 		this.map = map;
 																	
 	}
-	
 	public void deseneaza() {
 		for (int y = 0; y < map.map.length; y++) {
 			for (int x = 0; x < map.map[y].length; x++) {
-				if (c.continePunct(x, y)) {
+				if (c.continePunct(x, x)) {
 					map.setBrickValue(1, x, y);
+	
 				}
 			}
 		}
