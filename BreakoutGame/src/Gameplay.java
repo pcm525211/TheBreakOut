@@ -25,7 +25,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 	private int totalBricks = 10;
 
 	private Timer timer;
-	private int delay =(int) 20;
+	private int delay =(int) 10;
 
 	private int playerX = 400;
 
