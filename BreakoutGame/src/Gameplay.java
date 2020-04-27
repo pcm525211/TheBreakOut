@@ -37,11 +37,11 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 	private MapGenerator map;
 
 	public Gameplay() {
-		map = new MapGenerator(20, 20);
+		map = new MapGenerator(10, 10);
 		map.setOffset(0, 0);
 		int a = 10;
 		int b = 10;
-		int r = 5;
+		int r = 10;
 //		for(int i = 0; i < map.map.length; i++) {
 //			for(int j = 0; j < map.map[i].length; j++) {
 //				if((i - a)*(i - a) + (j - b)*(j - b) >= r * r) {
@@ -52,7 +52,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 //		}
 		
 		MapBuilder mb = new MapBuilder(map, new InvertedShape(new ShapeUnion(new Cerc(5, 10, 7), new Cerc(15, 10, 7))));
-		mb.deseneaza();
+		mb.stage1();
 		
 		addKeyListener(this);
 		addMouseMotionListener(this);
@@ -79,7 +79,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 		//score
 		if(gameOver) {
 			g.setColor(Color.BLACK);
-			g.setFont(new Font("serif", Font.BOLD, 25 ));
+			g.setFont(new Font("serif", Font.BOLD, 30 ));
 			g.drawString("Game Over", 350, 200);
 		}else {
 			g.setColor(Color.WHITE);
