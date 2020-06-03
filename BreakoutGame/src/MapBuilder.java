@@ -20,7 +20,7 @@ public class MapBuilder {
 	}
 	public void stage2() {
 		for (int y = 0; y < map.map.length; y++) {
-			for (int x = 0; x < map.map[y].length ; x++) {
+			for (int x = 0; x < 10 ; x++) {
 				if (c.continePunct(x, x)) {
 					map.setBrickValue(1, x, y);
 				}
