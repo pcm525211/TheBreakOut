@@ -36,7 +36,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 
 	private MapGenerator map;
 
-	public Gameplay() {
+	public Gameplay(int stage) {
 		map = new MapGenerator(10, 10);
 		map.setOffset(0, 0);
 		int a = 10;
@@ -52,7 +52,16 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener, Mou
 //		}
 		
 		MapBuilder mb = new MapBuilder(map, new InvertedShape(new ShapeUnion(new Cerc(5, 10, 7), new Cerc(15, 10, 7))));
-		mb.stage1();
+
+		switch (stage) {
+		case 1:
+			mb.stage1();
+			break;
+		case 2:
+			mb.stage2();
+			break;
+		}
+		
 		
 		addKeyListener(this);
 		addMouseMotionListener(this);
