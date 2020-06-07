@@ -117,23 +117,10 @@ public class Main {
 		panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		frame.add(panel);
-		frame.setSize(800, 600);
+		frame.setSize(800, 700);
 		frame.setVisible(true);
 	      
-		/*
-		JFrame obj = new JFrame();
-		obj.setPreferredSize(new Dimension(800,600));
-		obj.setLayout(null);
-		obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-		SelectStage selectstage = new SelectStage();
 		
-		obj.setContentPane(selectstage);
-		obj.setTitle("The Breakout");
-		obj.setResizable(true);
-		obj.pack();
-		obj.setVisible(true);
-		*/
 	}
 
 }
